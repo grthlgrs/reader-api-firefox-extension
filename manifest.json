@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Readwise Reader Link Saver",
+    "version": "1.0",
+    "description": "Right-click a link to save it to Readwise Reader",
+    "permissions": ["contextMenus", "storage", "tabs", "activeTab", "https://*/*"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "options.html"
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    }
+  }
+  
